@@ -1,0 +1,83 @@
+/* Alignement des zones | 1248-1600 (écran moyen) */
+
+@media screen and (max-width: 1601px) {
+	body 
+	.page-header {
+		height: 150px;
+	}
+	.footerleft {
+		width: 79%;
+	}
+	.footerright {
+		width: 20%;
+	}
+}
+
+@media screen and (max-width: 1575px) {
+	body
+	.page-header {
+		height: 210px;
+	}
+	.footerleft {
+		width: 50%;
+	}
+	.footerright {
+		width: 40%;
+	}
+}
+
+/* Alignement des zones | 1024-1248 (écran moyen) */
+
+@media screen and (max-width: 1248px) {
+	body 
+	.page-header {
+		height: 210px;
+	}
+	.footerleft {
+		width: 50%;
+	}
+	.footerright {
+		width: 40%;
+	}
+}
+
+/* Alignement des zones | 720-1024 (écran petit) */
+@media screen and (max-width: 1024px) {
+	body {
+		margin: 0px; margin-top: 0px; width: 100%;
+	}
+	.page-header {
+		height: 265px;
+	}
+	.iframeChat {
+		display: none;
+	}
+	.content {
+		width: calc(100% - 300px);
+	}
+	.menu2 {
+		width: 300px;
+	}
+	.footerright {
+		display: none;
+	}
+}
+
+/* Alignement des zones | <720 (écran petit) */
+@media screen and (max-width: 720px) {
+	body {
+		margin: 0px; margin-top: 0px; width: 100%;
+	}
+	.page-header {
+		height: 300px;
+	}
+	.menu2 {
+		float: left; clear:both; height: 400px; width: 100%;
+	}
+	.content {
+		width: 100%;
+	}
+	.footerleft {
+		width: 100%;
+	}
+}

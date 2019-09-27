@@ -1,0 +1,16 @@
+html {
+	background: url(../images/design/background-old.gif) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; }
+#overlay {
+	pointer-events: none;
+	opacity: 0.007;
+	width:1550;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:
+	999;
+	margin:0 auto;}

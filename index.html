@@ -72,11 +72,11 @@
 		
 	</header>
 		<!-- Page dynamique du site, contenu -->
-	<main class="content">
-		<iframe name="iframeContent" class="iframeContent" src="pages/accueil.html"></iframe>
+	<main class="content" id="izgih">
+		<iframe name="iframeContent" class="iframeContent" src="pages/accueil.html" id="iframeContainerMain"></iframe>
 	</main>
 		<!-- Menu lateral et chat -->	
-	<nav class="menu2">
+	<nav class="menu2" id="ie3o4">
 		<ul>
 			<li><a href="pages/accueil.html" target="iframeContent">Main</a> </li>
 			<li><a href="pages/content/infos.html" target="iframeContent">Infos</a> </li>
@@ -91,5 +91,21 @@
 		<div class="footerleft"><p>Cookies policy | <a href="pages/content/sources.html" target="iframeContent">Sources</a> | Legal</p>
 		</div><div class="footerright"><p>©Loupystudios 2015-2018</p></div>
 	</footer>
+	<script>
+		window.addEventListener('message', function(e) {
+			// message passed can be accessed in "data" attribute of the event object
+			var scroll_height = e.data;
+			if (scroll_height > 1024){
+				document.getElementById('iframeContainerMain').style.height = scroll_height + 50 + 'px';
+				document.getElementById('izgih').style.height = scroll_height + 50 + 'px'; 
+				document.getElementById('ie3o4').style.height = scroll_height + 50 + 'px';
+			}
+			else {
+				document.getElementById('iframeContainerMain').style.height = 1024 + 'px';
+				document.getElementById('izgih').style.height = 1024 + 'px'; 
+				document.getElementById('ie3o4').style.height = 1024 + 'px';
+			}
+		},false);
+	</script>
 </body>
 </html>

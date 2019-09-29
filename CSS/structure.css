@@ -22,7 +22,7 @@ footer p  {
 	border: 1px solid white;
 }
 .iframecontent {
-	frameborder: 0px;
+	frameborder: 0px; object-fit: fill;
 }
 .page-header {
 	border-radius: 15px 15px 0px 0px;

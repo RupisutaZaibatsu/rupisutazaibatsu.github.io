@@ -60,6 +60,15 @@
 <p><img alt="" src="https://pre00.deviantart.net/d4fb/th/pre/i/2017/156/0/6/cyberpunk_city__cinematic_frame__6__by_artursadlos-dbbmvlz.jpg" style="width: 500px; height: 281px;" /></p>
 
 <p>(par <a data-ga_click_event="{&quot;category&quot;:&quot;Deviation&quot;,&quot;action&quot;:&quot;description_author&quot;,&quot;nofollow&quot;:0}" href="https://artursadlos.deviantart.com/">artursadlos</a>)</p>
-
+<script>
+	// Send message to the top window (parent) at 500ms interval
+	setInterval(function(){
+		// first parameter is the message to be passed
+		// second paramter is the domain of the parent 
+		// in this case "*" has been used for demo sake (denoting no preference)
+		// in production always pass the target domain for which the message is intended 
+		window.top.postMessage(document.body.scrollHeight, "*");
+	}, 500); 
+</script>
 </body>
 </html>

@@ -20,5 +20,15 @@
 	<p style="text-align: justify;">We mainly release the games from our own circle (a.k.a. Loupystudio Software), but we also help other teams by letting them bypass the additionnal fees coming with videogame releases (fees you'd have to pay for on Google Play, Nintendo E-Shop or Steam).</p>
 	<h2>The Website</h2>
 	<p style="text-align: justify;">The website is mainly made by Ōkamii "Loupyboy" Gūzen and is kindly hosted by [HOST]. The project itself is held by Harry "HazOfHell" R. and Loup "Loupyboy" D. We would like to thanks the artists whose graphic art are used as placeholder.</p>
+	<script>
+	// Send message to the top window (parent) at 500ms interval
+	setInterval(function(){
+		// first parameter is the message to be passed
+		// second paramter is the domain of the parent 
+		// in this case "*" has been used for demo sake (denoting no preference)
+		// in production always pass the target domain for which the message is intended 
+		window.top.postMessage(document.body.scrollHeight, "*");
+	}, 500); 
+	</script>
 </body>
 </html>

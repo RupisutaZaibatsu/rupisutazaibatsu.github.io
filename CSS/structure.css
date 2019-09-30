@@ -74,10 +74,10 @@ body {
 	clear: left;
 }
 .content {
-	clear: left; float: left; height: 1024px; width: calc(100% - 371px); box-sizing: border-box;
+	clear: left; float: left; height: 1310px; width: calc(100% - 371px); box-sizing: border-box;
 }
 .menu2 {
-	float: left; height: 1024px; width: 371px; box-sizing: border-box;
+	float: left; height: 1310px; width: 371px; box-sizing: border-box;
 }
 .page-footer {
 	clear: left; height: 100px;
@@ -92,5 +92,8 @@ body {
 	float: left; height: 100px; width: 20%; padding-top: 30px; padding-bottom: 30px; text-align: right;
 }
 .iframeChat {
+	float: right; margin-right: 25px; margin-left: 25px; margin-bottom: 15px; border: 0;
+}
+.twitter-timeline {
 	float: right; margin-right: 25px; margin-left: 25px; border: 0;
 }

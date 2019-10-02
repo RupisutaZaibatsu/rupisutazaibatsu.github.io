@@ -23,5 +23,15 @@
 	<h2>Hazofhell</h2>
 	<img alt="" src="https://yt3.ggpht.com/a/AGF-l7-R0kHFYe2dSNClPybgaGRX3hFhRTo_EHjFKQ=s288-c-k-c0xffffffff-no-rj-mo" />
 	<p style="text-align: justify;">This edgy memelord is the co-founder of RPST財閥. He plays live on his Twitch stream channel, and advertizes the label.</p>
+	<script>
+	// Send message to the top window (parent) at 500ms interval
+	setInterval(function(){
+		// first parameter is the message to be passed
+		// second paramter is the domain of the parent 
+		// in this case "*" has been used for demo sake (denoting no preference)
+		// in production always pass the target domain for which the message is intended 
+		window.top.postMessage(document.body.scrollHeight, "*");
+	}, 500); 
+	</script>
 </body>
 </html>

@@ -12,10 +12,10 @@
 <table align="center" border="1" cellpadding="1" cellspacing="1" style="height:100%;width:100%;">
 	<tbody>
 		<tr>
-			<td style="text-align: center;"><a href="pages/content/artists/kamisensei.html"><img alt="https://i1.sndcdn.com/avatars-000690815804-1nilmw-t200x200.jpg" src="https://i1.sndcdn.com/avatars-000690815804-1nilmw-t200x200.jpg" /></a></td>
-			<td style="text-align: center;"><a href="pages/content/artists/mistune.html"><img alt="https://i1.sndcdn.com/avatars-000331165665-dvevg9-t200x200.jpg" src="https://i1.sndcdn.com/avatars-000331165665-dvevg9-t200x200.jpg" /></a></td>
-			<td style="text-align: center;"><a href="pages/content/artists/elode.html"><img alt="https://i1.sndcdn.com/avatars-000616938468-iny71z-t200x200.jpg" src="https://i1.sndcdn.com/avatars-000616938468-iny71z-t200x200.jpg" /></a></td>
-			<td style="text-align: center;"><a href="pages/content/artists/larses.html"><img alt="https://i1.sndcdn.com/avatars-000397319622-ss06nb-t200x200.jpg" src="https://i1.sndcdn.com/avatars-000397319622-ss06nb-t200x200.jpg" /></a></td>
+			<td style="text-align: center;"><a href="pages/content/artists/kamisensei.html"><img alt="Kami Sensei" src="https://i1.sndcdn.com/avatars-000690815804-1nilmw-t200x200.jpg" /></a></td>
+			<td style="text-align: center;"><a href="pages/content/artists/mistune.html"><img alt="Mitsune" src="https://i1.sndcdn.com/avatars-000331165665-dvevg9-t200x200.jpg" /></a></td>
+			<td style="text-align: center;"><a href="pages/content/artists/elode.html"><img alt="Elode" src="https://i1.sndcdn.com/avatars-000616938468-iny71z-t200x200.jpg" /></a></td>
+			<td style="text-align: center;"><a href="pages/content/artists/larses.html"><img alt="Larses" src="https://i1.sndcdn.com/avatars-000397319622-ss06nb-t200x200.jpg" /></a></td>
 		</tr>
 		<tr>
 			<td style="text-align: center;">&nbsp;</td>
@@ -37,6 +37,17 @@
 		</tr>
 	</tbody>
 </table>
+
+	<script>
+	// Send message to the top window (parent) at 500ms interval
+	setInterval(function(){
+		// first parameter is the message to be passed
+		// second paramter is the domain of the parent 
+		// in this case "*" has been used for demo sake (denoting no preference)
+		// in production always pass the target domain for which the message is intended 
+		window.top.postMessage(document.body.scrollHeight, "*");
+	}, 500); 
+	</script>
 
 </body>
 </html>

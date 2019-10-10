@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="author" content="21705587" />
+	<title>Infos</title>
+	<link rel="stylesheet" type="text/css" href="../../CSS/structure.css" />
+	<link rel="stylesheet" type="text/css" href="../../CSS/content.css" />
+</head>
+<body>
+<h1>News</h1>
+<h2>New videos!</h2>
+https://plyr.io/
+<h2>New music releases!</h2>
+
+<h2>New games!</h2>
+<p></p>
+	<script>
+	// Send message to the top window (parent) at 500ms interval
+	setInterval(function(){
+		// first parameter is the message to be passed
+		// second paramter is the domain of the parent 
+		// in this case "*" has been used for demo sake (denoting no preference)
+		// in production always pass the target domain for which the message is intended 
+		window.top.postMessage(document.body.scrollHeight, "*");
+	}, 500); 
+	</script>
+</body>
+</html>

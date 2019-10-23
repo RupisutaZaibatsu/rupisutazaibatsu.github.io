@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="author" content="21705587" />
+	<title>RPST財閥 - Kami Sensei</title>
+	<link rel="stylesheet" type="text/css" href="../../../CSS/structure.css" />
+	<link rel="stylesheet" type="text/css" href="../../../CSS/content.css" />
+</head>
+<body>
+
+<p style="text-align: center;"><img alt="Kami Sensei" src="https://i1.sndcdn.com/avatars-000690815804-1nilmw-t200x200.jpg" /></p>
+<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/102085743&color=%23c50000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+
+	<script>
+	// Send message to the top window (parent) at 500ms interval
+	setInterval(function(){
+		// first parameter is the message to be passed
+		// second paramter is the domain of the parent 
+		// in this case "*" has been used for demo sake (denoting no preference)
+		// in production always pass the target domain for which the message is intended 
+		window.top.postMessage(document.body.scrollHeight, "*");
+	}, 500); 
+	</script>
+
+</body>
+</html>
